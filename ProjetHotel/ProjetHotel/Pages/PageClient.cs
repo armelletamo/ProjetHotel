@@ -9,16 +9,25 @@ namespace ProjetHotel.Pages
 {
     class PageClient : MenuPage
     {
-        public PageClient() : base("Page Client", false)
+
+        IList<Client> _listeClient;
+
+        public PageClient() : base("Gestion de Client", false)
         {
-            Menu.AddOption("1", "Liste de Client",
+            Menu.AddOption("1", "liste de Client",
                 AfficherListeClient);
            
         }
 
         private void AfficherListeClient()
         {
-            
+
+            _listeClient = AppGrandHotel.Instance.Contexte.GetListClient();
+           
+            ConsoleTable.From(_listeClient, "Client").Display("Client");
+
+
+
         }
     }
 }

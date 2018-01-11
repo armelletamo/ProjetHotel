@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ProjetHotel
 {
-    class DAL:DbContext
+    public class ContexteGrandHotel:DbContext
     {
         public DbSet<Client> Client { get; set; }
 
-        public DAL() : base("ProjetHotel.Properties.Settings1.GrandHotel")
+        public  ContexteGrandHotel() : base("ProjetHotel.Settings1.GrandHotelConnect")
         {
 
         }
@@ -23,7 +23,12 @@ namespace ProjetHotel
         }
 
 
+        public  IList<Client> GetListClient()
+        {
 
+            Client.OrderBy(c => c.Id).Load();
+            return Client.Local.OrderBy(c => c.Id).ToList();
+        }
 
 
 

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjetHotel.Properties {
+namespace ProjetHotel {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
-    internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
         
@@ -26,11 +26,11 @@ namespace ProjetHotel.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDb)\\MSSQLLocalDb;Initial Catalog=GrandHotel;Integrated Security" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDb)\\mssqllocalDb;Initial Catalog=GrandHotel;Integrated Security" +
             "=True")]
-        public string GrandHotel {
+        public string GrandHotelConnect {
             get {
-                return ((string)(this["GrandHotel"]));
+                return ((string)(this["GrandHotelConnect"]));
             }
         }
     }

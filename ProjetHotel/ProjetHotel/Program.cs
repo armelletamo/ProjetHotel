@@ -1,4 +1,5 @@
 ﻿using Outils.TConsole;
+using ProjetHotel.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,10 @@ namespace ProjetHotel
             app.Title = "Grand Hotel";
 
             // Ajout des pages
-            Page Accueil = new Pageaccueil();
+            Page Accueil = new PageAccueil();
             app.AddPage(Accueil);
 
-            Page Fournisseur = new PageClient();
+            Page Client = new PageClient();
             app.AddPage(Client);
 
 

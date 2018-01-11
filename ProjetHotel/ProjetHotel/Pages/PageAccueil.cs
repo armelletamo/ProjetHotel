@@ -1,4 +1,5 @@
 ﻿using Outils.TConsole;
+using ProjetHotel.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace ProjetHotel
         {
             Menu.AddOption("0", "Quitter l'application",
                 () => Environment.Exit(0));
-            Menu.AddOption("1", "Fournisseur",
+            Menu.AddOption("1", "Client",
                  () => AppGrandHotel.Instance.NavigateTo(typeof(PageClient)));
             
         }
