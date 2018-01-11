@@ -22,17 +22,14 @@ namespace ProjetHotel.Pages
 
         }
 
-        private void AjouterClient()
-        {
-            if (_listeClient == null)
-                _listeClient = AppGrandHotel.Instance.Contexte.AfficherListeClient();
-            ConsoleTable.From(_catégories).Display("catégories");
-        }
+        //private void AjouterClient()
+        //{
+        //    if (_listeClient == null)
+        //        _listeClient = AppGrandHotel.Instance.Contexte.AfficherListeClient();
+        //    ConsoleTable.From(_listeClient).Display("catégories");
+        //}
 
-        private void AfficherListeClient()
-        {
-            throw new NotImplementedException();
-        }
+     
 
         private void AfficherCoordonneClient()
         {   
