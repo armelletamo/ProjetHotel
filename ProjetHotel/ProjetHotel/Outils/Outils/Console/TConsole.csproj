@@ -4,13 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9E78723D-BB06-447D-B97A-3E6CBCF466AB}</ProjectGuid>
+    <ProjectGuid>{222ADAFA-6E7D-404C-A04D-DB30BDF702A9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ProjetHotel</RootNamespace>
-    <AssemblyName>ProjetHotel</AssemblyName>
+    <RootNamespace>Outils.TConsole</RootNamespace>
+    <AssemblyName>Outils.TConsole</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,16 +35,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,32 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppGrandHotel.cs" />
-    <Compile Include="ContexteGrandHotel.cs" />
-    <Compile Include="Entite.cs" />
-    <Compile Include="Pages\PageAccueil.cs" />
-    <Compile Include="Pages\PageClient.cs" />
+    <Compile Include="ConsoleCard.cs" />
+    <Compile Include="ConsoleTable.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Output.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="ConsoleApp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings1.settings</DependentUpon>
-    </Compile>
+    <Compile Include="TestApp.cs" />
+    <Compile Include="TestPages.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
-    <None Include="Settings1.settings">
-      <Generator>PublicSettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Outils\Console\TConsole.csproj">
-      <Project>{222adafa-6e7d-404c-a04d-db30bdf702a9}</Project>
-      <Name>TConsole</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

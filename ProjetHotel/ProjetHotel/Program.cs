@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjetHotel.Pages;
 
 namespace ProjetHotel
 {
@@ -15,10 +16,10 @@ namespace ProjetHotel
             app.Title = "Grand Hotel";
 
             // Ajout des pages
-            Page Accueil = new Pageaccueil();
+            Page Accueil = new PageAccueil();
             app.AddPage(Accueil);
 
-            Page Fournisseur = new PageClient();
+            Page Client  = new PageClient();
             app.AddPage(Client);
 
 

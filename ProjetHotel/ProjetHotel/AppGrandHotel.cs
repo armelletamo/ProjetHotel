@@ -11,6 +11,8 @@ namespace ProjetHotel
     class AppGrandHotel: ConsoleApplication
     {
         private static AppGrandHotel _instance;
+        public ContexteGrandHotel Contexte { get; set; }
+
         public static AppGrandHotel Instance
         {
             get
@@ -28,6 +30,7 @@ namespace ProjetHotel
             // Définition des options de menu à ajouter dans tous les menus de pages
             MenuPage.DefaultOptions.Add(
                new Option("a", "Accueil", () => _instance.NavigateHome()));
+            Contexte = new ContexteGrandHotel();
         }
     }
 }
