@@ -15,7 +15,7 @@ namespace ProjetHotel
         class Client
         {
             public int Id { get; set; }
-
+            nouveau
 
 
 
