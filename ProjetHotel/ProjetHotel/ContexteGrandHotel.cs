@@ -11,12 +11,9 @@ namespace ProjetHotel
     public class ContexteGrandHotel:DbContext
     {
         public DbSet<Client> Client { get; set; }
-        public DbSet<Adresse> Adresse { get; set; }
-        public DbSet<Email> Email { get; set; }
 
-        public ContexteGrandHotel() : base("ProjetHotel.Properties.Settings1.GrandHotel")
+        public  ContexteGrandHotel() : base("ProjetHotel.Settings1.GrandHotelConnect")
         {
-           
 
         }
 
@@ -25,31 +22,15 @@ namespace ProjetHotel
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
-        public IList<string> AfficherCoordonneesClient(int idClient)
+
+        public  IList<Client> GetListClient()
         {
-            var param = new System.Data.SqlClient.SqlParameter
-            {
-                SqlDbType = System.Data.SqlDbType.NVarChar,
-                ParameterName = "@id",
-                Value = idClient
-            };
 
-            var result=Database.SqlQuery<string>(@"select a.CodePostal,t.Numero, e.Adresse
-                                                from client c
-                                                inner join Adresse a on a.IdClient=c.Id
-                                                inner join Telephone t on t.IdClient=c.Id
-                                                inner join Email e on e.IdClient=c.id
-                                                where c.id=@id", param).ToList();
-
-            return result;
-
+            Client.OrderBy(c => c.Id).Load();
+            return Client.Local.OrderBy(c => c.Id).ToList();
         }
 
 
-        public void AjouterUnNouveauClient(Client newClient)
-        {
-            Client.Add(newClient);
-        }
 
     }
 }

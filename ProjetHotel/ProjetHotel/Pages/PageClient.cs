@@ -9,11 +9,12 @@ namespace ProjetHotel.Pages
 {
     class PageClient : MenuPage
     {
+
         IList<Client> _listeClient;
 
-        public PageClient() : base("Page Client", false)
+        public PageClient() : base("Gestion de Client", false)
         {
-            Menu.AddOption("1", "Liste de Client",
+            Menu.AddOption("1", "liste de Client",
                 AfficherListeClient);
             Menu.AddOption("2", "Afficher les coordonnées d'un client",
                 AfficherCoordonneClient);
@@ -36,6 +37,15 @@ namespace ProjetHotel.Pages
             int id = Input.Read<int>("Id du client :");
             var coordonnees =AppGrandHotel.Instance.Contexte.AfficherCoordonneesClient(id);
             ConsoleTable.From(coordonnees).Display("Coordonnées");
+        private void AfficherListeClient()
+        {
+
+            _listeClient = AppGrandHotel.Instance.Contexte.GetListClient();
+           
+            ConsoleTable.From(_listeClient, "Client").Display("Client");
+
+
+
         }
     }
 }

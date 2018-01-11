@@ -10,8 +10,11 @@ namespace ProjetHotel
 {
 
 
+
+
     public class Client
     {
+        [Key]
         public int Id { get; set; }
         [MaxLength(4)]
         public string Civilite { get; set; }
@@ -20,8 +23,11 @@ namespace ProjetHotel
         public bool CarteFidelite { get; set; }
         public string Societe { get; set; }
         // Propriété de navigation
-        public virtual Adresse Adresse { get; set; }
+        [Display(ShortName = "None")]
+        public virtual Adresse Address { get; set; }
+        [Display(ShortName = "None")]
         public virtual List<Telephone> Telephones { get; set; }
+        [Display(ShortName = "None")]
         public virtual List<Email> Emails { get; set; }
     }
 
@@ -53,6 +59,7 @@ namespace ProjetHotel
 
     public class Email
     {
+        [Key]
         public string Adresse { get; set; }
         [ForeignKey("Client")]
         public int IdClient { get; set; }
