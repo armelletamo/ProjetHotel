@@ -34,7 +34,44 @@ namespace ProjetHotel
         public virtual List<Telephone> Telephones { get; set; }
         [Display(ShortName = "None")]
         public virtual List<Email> Emails { get; set; }
+        [Display(ShortName = "None")]
+        public virtual List<Facture> Factures { get; set; }
     }
+
+    public class Facture
+    {
+        [Key]
+        public int Id { get; set; }
+        [ForeignKey("Client")]
+        public int IdClient { get; set; }
+        public DateTime DateFacture { get; set; }
+        public DateTime DatePaiement { get; set; }
+        [MaxLength(3)]
+        public string CodeModePaiement { get; set; }
+        [Display(ShortName = "None")]
+        public virtual List<LigneFacture> LigneFactures { get; set; }
+        [XmlIgnore]
+        public virtual Client Client { get; set; }
+
+    }
+
+    public class LigneFacture
+    {
+       [Key]
+       [Column(Order =0)]
+        [ForeignKey("Facture")]
+        public int IdFacture { get; set; }
+        [Key]
+        [Column(Order = 1)]
+        public int NumLigne { get; set; }
+        public Int16 Quantite { get; set; }
+        public decimal MontantHT { get; set; }
+        public decimal TauxTVA { get; set; }
+        public decimal TauxReduction { get; set; }
+        [XmlIgnore]
+        public virtual Facture Facture { get; set; }
+    }
+
 
     public class Adresse
     {

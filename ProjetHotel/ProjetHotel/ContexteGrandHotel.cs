@@ -12,12 +12,14 @@ namespace ProjetHotel
 {
     public class ContexteGrandHotel : DbContext
     {
-        
-           
+
+
         public DbSet<Client> Client { get; set; }
         public DbSet<Telephone> Telephones { get; set; }
         public DbSet<Adresse> Adresse { get; set; }
         public DbSet<Email> Emails { get; set; }
+        public DbSet<Facture> Factures { get; set; }
+        public DbSet<LigneFacture> LigneFactures { get; set; }
 
         public ContexteGrandHotel() : base("ProjetHotel.Settings1.GrandHotelConnect")
         {
@@ -55,6 +57,15 @@ namespace ProjetHotel
             }
         }
 
+        public void AjouterLignesFacture(LigneFacture ligneFacture)
+        {
+            LigneFactures.Add(ligneFacture);
+        }
+
+        public void AjouterUneFacture(Facture newFacture)
+        {
+            Factures.Add(newFacture);
+        }
 
         public void AjouterTelephone(Telephone tele)
         {
@@ -66,9 +77,36 @@ namespace ProjetHotel
             Emails.Add(email);
         }
 
+        public void UpdateDateModePaiement(int id, DateTime datePaiement, string modePaiement)
+        {
+            var facture = Factures.Find(id);
+            facture.DatePaiement=datePaiement;
+            facture.CodeModePaiement = modePaiement;
+        }
+
         public void EnregistrerModifs()
         {
             SaveChanges();
+        }
+
+        public int CheckIdClient(int id)
+        {
+            bool idExiste = false;
+
+            do
+            {
+                if (Client.Any(o => o.Id == id))
+                {
+                    idExiste = true;
+                    return id;
+                }
+                else
+                {
+                    Console.WriteLine("Id n'existe pas");
+                }
+            }
+            while (!idExiste);
+            return -1;
         }
 
     }
