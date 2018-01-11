@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetHotel
 {
-    class Entite
-    {
+    
 
 
 
@@ -15,9 +14,12 @@ namespace ProjetHotel
         class Client
         {
             public int Id { get; set; }
-            nouveau
+            public string Civilite { get; set; }
+            public string Nom { get; set; }
+            public string Prenom { get; set; }
 
-
+            public bool CarteFidelite { get; set; }
+            public string Societe { get; set; }
 
         }
 
@@ -27,5 +29,5 @@ namespace ProjetHotel
 
 
 
-    }
+    
 }
