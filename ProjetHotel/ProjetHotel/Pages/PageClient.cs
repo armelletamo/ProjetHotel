@@ -20,9 +20,25 @@ namespace ProjetHotel.Pages
                 AfficherCoordonneClient);
             Menu.AddOption("3", "Ajouter un nouveau client",
                AjouterNouveauClient);
-
             Menu.AddOption("4", "Ajouter un téléphone ou adresser email à un client",
               AjouterTelephoneEmail);
+
+            Menu.AddOption("6", "Exporter la liste des clients au format XML",
+              ExporterXml);
+
+            Menu.AddOption("7", "Enregistrer les modifications", EnregistrerModifs);
+        }
+
+        private void ExporterXml()
+        {
+            List<Client> listeClient;
+            listeClient = AppGrandHotel.Instance.Contexte.GetListClient().ToList();
+            ContexteGrandHotel.ExporterXML(listeClient);
+        }
+
+        private void EnregistrerModifs()
+        {
+            AppGrandHotel.Instance.Contexte.EnregistrerModifs();
         }
 
         private void AjouterNouveauClient()
@@ -45,14 +61,35 @@ namespace ProjetHotel.Pages
                 choix = Input.Read<int>("1 pour ajouter un N° Téléphone 2 pour Ajouter une adresse email:");
                 if (choix == 1)
                 {
-                    AppGrandHotel.Instance.Contexte.AjouterTelephone();
+                    Telephone tele = new Telephone();
+                    tele.IdClient = Input.Read<int>("Id du client :");//vérifier id client existe
+
+                    //int longueurNumero = 0;
+                    //while (longueurNumero>12 && longueurNumero==0)
+                    //{   
+
+                    tele.Numero = Input.Read<String>("Saisir le N° téléphone à ajouter :");   //vérifier longueur saisie
+                    tele.CodeType = Input.Read<String>("Saisir le Type de numéro F pour fixe ou M pour mobile :");
+                    tele.Pro = Input.Read<bool>("Saisir le Type de numéro : personnel: false ,  pro: true ");
+
+                    AppGrandHotel.Instance.Contexte.AjouterTelephone(tele);
                 }
 
+                else if (choix == 2)
+                {
+                    Email email = new Email();
+                    email.IdClient = Input.Read<int>("Id du client :");
+                    email.Adresse = Input.Read<String>("Saisir l'adresse email:");
+                    email.Pro = Input.Read<bool>("Saisir le Type de numéro : personnel: false ,  pro: true ");
+                    AppGrandHotel.Instance.Contexte.AjouterEmail(email);
+
+                }
             }
+
+
         }
 
-
-
+        
         private void AfficherCoordonneClient()
         {
             int id = Input.Read<int>("Id du client :");
@@ -64,11 +101,7 @@ namespace ProjetHotel.Pages
             var telephones = coordonneesClient.Telephones;
 
 
-            var emails = coordonneesClient.Emails.Select(e => e.Adresse);
-
-
-
-            _listeClient = AppGrandHotel.Instance.Contexte.GetListClient();
+            var emails = coordonneesClient.Emails;
 
             Console.WriteLine("Adresse: {0}", adresse.ToString());
             //ConsoleTable.From(adresse,"adresse").Display("Adresse");
