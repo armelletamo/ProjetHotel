@@ -22,9 +22,9 @@ namespace ProjetHotel
         public string Prenom { get; set; }
         public bool CarteFidelite { get; set; }
         public string Societe { get; set; }
-        // Propriété de navigation
+        //Propriété de navigation
         [Display(ShortName = "None")]
-        public virtual Adresse Address { get; set; }
+        public virtual Adresse Adresse { get; set; }
         [Display(ShortName = "None")]
         public virtual List<Telephone> Telephones { get; set; }
         [Display(ShortName = "None")]
@@ -43,6 +43,12 @@ namespace ProjetHotel
         public string Ville { get; set; }
         // Propriété de navigation
         public virtual Client Client { get; set; }
+
+        public override string ToString()
+        {
+            return IdClient + Rue +"  "+ Complement + "  "+CodePostal +"  " +Ville;
+        }
+
     }
 
     public class Telephone
@@ -51,9 +57,11 @@ namespace ProjetHotel
         [MaxLength(12)]
         public string Numero { get; set; }
         [ForeignKey("Client")]
+        [Display(ShortName = "None")]
         public int IdClient { get; set; }
-        public char CodeType { get; set; }
+        public string CodeType { get; set; }
         public bool Pro { get; set; }
+        [Display(ShortName = "None")]
         public virtual Client Client { get; set; }
     }
 
