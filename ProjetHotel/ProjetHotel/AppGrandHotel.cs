@@ -1,16 +1,16 @@
-﻿using Outils.TConsole;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Outils.TConsole;
 
 namespace ProjetHotel
 {
-    public class AppGrandHotel:ConsoleApplication
+    class AppGrandHotel: ConsoleApplication
     {
         private static AppGrandHotel _instance;
-
         public static AppGrandHotel Instance
         {
             get
@@ -21,15 +21,13 @@ namespace ProjetHotel
                 return _instance;
             }
         }
-
+        
+        // Constructeur
         public AppGrandHotel()
         {
             // Définition des options de menu à ajouter dans tous les menus de pages
             MenuPage.DefaultOptions.Add(
-                new Option("a", "Accueil", () => _instance.NavigateHome()));
-
-            //MenuPage.DefaultOptions.Add(
-            //	new Option("p", "Page précédente", () => _instance.NavigateBack()));
+               new Option("a", "Accueil", () => _instance.NavigateHome()));
         }
     }
 }
