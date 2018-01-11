@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ProjetHotel
 {
-    class Contexte:DbContext
+    class DAL:DbContext
     {
         public DbSet<Client> Client { get; set; }
 
-        public Contexte() : base("ProjetHotel.Properties.Settings1.GrandHotel")
+        public DAL() : base("ProjetHotel.Properties.Settings1.GrandHotel")
         {
 
         }
