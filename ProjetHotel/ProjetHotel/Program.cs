@@ -12,6 +12,7 @@ namespace ProjetHotel
     {
         static void Main(string[] args)
         {
+
             AppGrandHotel app = AppGrandHotel.Instance;
             app.Title = "Grand Hotel";
 
@@ -19,8 +20,11 @@ namespace ProjetHotel
             Page Accueil = new PageAccueil();
             app.AddPage(Accueil);
 
-            Page Client  = new PageClient();
+            Page Client = new PageClient();
             app.AddPage(Client);
+
+            Page Facture = new Factures();
+            app.AddPage(Facture);
 
 
 
@@ -30,6 +34,8 @@ namespace ProjetHotel
 
             app.NavigateTo(Client);
 
+            app.NavigateTo(Facture);
         }
     }
+    
 }

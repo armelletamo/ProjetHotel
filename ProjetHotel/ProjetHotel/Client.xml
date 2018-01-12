@@ -1,2 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Clients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<Clients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Client Id="1" Civilite="M" Nom="DUPONT" Prenom="Alain" CarteFidelite="false" />
+  <Client Id="2" Civilite="M" Nom="MARTIN" Prenom="Marc" CarteFidelite="false" Societe="Transports MARTIN &amp; fils" />
+  <Client Id="3" Civilite="M" Nom="BOUVIER" Prenom="Aimé" CarteFidelite="false" />
+  <Client Id="4" Civilite="M" Nom="DUBOIS" Prenom="Paul" CarteFidelite="false" />
+  <Client Id="5" Civilite="M" Nom="DREYFUS" Prenom="Jean" CarteFidelite="false" />
+  <Client Id="6" Civilite="M" Nom="FAURE" Prenom="Gustave" CarteFidelite="false" Societe="Boulangerie du marché" />
+  <Client Id="7" Civilite="M" Nom="LACOMBE" Prenom="Paul" CarteFidelite="true" />
+  <Client Id="8" Civilite="Mlle" Nom="DUHAMEL" Prenom="Evelyne" CarteFidelite="false" />
+  <Client Id="9" Civilite="Mme" Nom="BOYER" Prenom="Martine" CarteFidelite="false" />
+  <Client Id="10" Civilite="M" Nom="MARTIN" Prenom="Martin" CarteFidelite="false" Societe="HERMAREX IMPOREXPORT" />
+  <Client Id="11" Civilite="M" Nom="PAUL" Prenom="Marcel" CarteFidelite="false" Societe="Cie Internationale des Machines Electromécaniques" />
+  <Client Id="12" Civilite="M" Nom="DUVAL" Prenom="Arsène" CarteFidelite="false" />
+  <Client Id="13" Civilite="M" Nom="PHILIPPE" Prenom="André" CarteFidelite="false" />
+  <Client Id="14" Civilite="M" Nom="PIERRELAYE" Prenom="Paul" CarteFidelite="false" />
+  <Client Id="15" Civilite="Mlle" Nom="DAUMIER" Prenom="Amélie" CarteFidelite="false" />
+  <Client Id="16" Civilite="M" Nom="CHABAUD" Prenom="Daniel" CarteFidelite="false" />
+  <Client Id="17" Civilite="M" Nom="BAILLY" Prenom="Jean-François" CarteFidelite="false" Societe="Entreprise DUPONT CHAUFFAGE" />
+  <Client Id="18" Civilite="M" Nom="FAYOLLE" Prenom="Olivier" CarteFidelite="true" />
+  <Client Id="19" Civilite="M" Nom="COCINO" Prenom="Gérard" CarteFidelite="false" />
+  <Client Id="20" Civilite="M" Nom="FRANQUINET" Prenom="Florent" CarteFidelite="false" />
+  <Client Id="21" Civilite="M" Nom="MALATERRE" Prenom="Arnaud" CarteFidelite="false" />
+  <Client Id="22" Civilite="M" Nom="MEDARD" Prenom="Dylan" CarteFidelite="false" />
+  <Client Id="23" Civilite="M" Nom="AUZENAT" Prenom="Michel" CarteFidelite="false" />
+  <Client Id="24" Civilite="M" Nom="CHTCHEPINE" Prenom="Dominique" CarteFidelite="false" Societe="HOTEL *** DE LA GARE" />
+  <Client Id="25" Civilite="M" Nom="LE GUILLARD" Prenom="Alain" CarteFidelite="false" />
+  <Client Id="26" Civilite="M" Nom="GARREAU" Prenom="Paul" CarteFidelite="false" Societe="IBM Corp." />
+  <Client Id="27" Civilite="M" Nom="LECUYER" Prenom="Lionel" CarteFidelite="false" />
+  <Client Id="28" Civilite="M" Nom="PRA-LETTRY" Prenom="Emmanuel" CarteFidelite="false" />
+  <Client Id="29" Civilite="M" Nom="SILLET" Prenom="Jacques" CarteFidelite="false" />
+  <Client Id="30" Civilite="M" Nom="TROLLAT" Prenom="Hervé" CarteFidelite="false" />
+  <Client Id="31" Civilite="M" Nom="BOUCHET" Prenom="Michel" CarteFidelite="true" />
+  <Client Id="32" Civilite="M" Nom="LEBAILLIF" Prenom="Christian" CarteFidelite="false" />
+  <Client Id="33" Civilite="M" Nom="DU HAUT CILLY" Prenom="Guy" CarteFidelite="false" />
+  <Client Id="34" Civilite="Mme" Nom="GALLACIER" Prenom="Noëlle" CarteFidelite="false" Societe="Transports GALLACIER" />
+  <Client Id="35" Civilite="M" Nom="PICOT" Prenom="Dominique" CarteFidelite="false" />
+  <Client Id="36" Civilite="M" Nom="BEAUNEE" Prenom="Pierre" CarteFidelite="false" />
+  <Client Id="37" Civilite="M" Nom="VERNET" Prenom="Daniel" CarteFidelite="false" />
+  <Client Id="38" Civilite="M" Nom="ALBERT" Prenom="Christian" CarteFidelite="false" />
+  <Client Id="39" Civilite="Mme" Nom="HESS" Prenom="Lucette" CarteFidelite="false" />
+  <Client Id="40" Civilite="M" Nom="CHATON" Prenom="Gérard" CarteFidelite="false" />
+  <Client Id="41" Civilite="M" Nom="PLATONOFF" Prenom="Philippe" CarteFidelite="false" />
+  <Client Id="42" Civilite="Mme" Nom="LETERRIER" Prenom="Monique" CarteFidelite="true" Societe="SA AROMAX ENTREVONT" />
+  <Client Id="43" Civilite="M" Nom="MONTEIL" Prenom="Jean" CarteFidelite="false" />
+  <Client Id="44" Civilite="M" Nom="SPITHAKIS" Prenom="Jean-Paul" CarteFidelite="false" />
+  <Client Id="45" Civilite="M" Nom="ORELL" Prenom="Olivier" CarteFidelite="false" />
+  <Client Id="46" Civilite="Mme" Nom="MARTINET" Prenom="Carmen" CarteFidelite="false" />
+  <Client Id="47" Civilite="M" Nom="RAY" Prenom="Yannick" CarteFidelite="false" />
+  <Client Id="48" Civilite="M" Nom="TARSAC" Prenom="René" CarteFidelite="false" />
+  <Client Id="49" Civilite="M" Nom="COULOMB" Prenom="Renaud" CarteFidelite="false" Societe="Cabinet COULOMN et CALEMANT" />
+  <Client Id="50" Civilite="M" Nom="SAVY" Prenom="Jean-Claude" CarteFidelite="false" Societe="Etude et conseil SAVY frères" />
+  <Client Id="51" Civilite="Mme" Nom="DAVID" Prenom="Jacqueline" CarteFidelite="false" />
+  <Client Id="52" Civilite="M" Nom="FORGEOT" Prenom="Jean-Bernard" CarteFidelite="false" />
+  <Client Id="53" Civilite="M" Nom="BERGER" Prenom="Jean-Pierre" CarteFidelite="false" />
+  <Client Id="54" Civilite="M" Nom="DOUBLET" Prenom="Thierry" CarteFidelite="false" />
+  <Client Id="55" Civilite="M" Nom="MATHIEU" Prenom="Gérard" CarteFidelite="false" />
+  <Client Id="56" Civilite="Mme" Nom="MOURGUES" Prenom="Jacqueline" CarteFidelite="false" />
+  <Client Id="57" Civilite="M" Nom="PIERROT" Prenom="Robert" CarteFidelite="false" />
+  <Client Id="58" Civilite="M" Nom="FRANQUEBALME" Prenom="Daniel" CarteFidelite="true" Societe="SA DUBOIS-MORISSE" />
+  <Client Id="59" Civilite="Mme" Nom="ZAMPIERO" Prenom="Annick" CarteFidelite="false" />
+  <Client Id="60" Civilite="M" Nom="PASCOT" Prenom="Vincent" CarteFidelite="false" />
+  <Client Id="61" Civilite="M" Nom="MECHRI" Prenom="Pierre" CarteFidelite="false" />
+  <Client Id="62" Civilite="M" Nom="THIERY" Prenom="Fathy" CarteFidelite="false" />
+  <Client Id="63" Civilite="Mme" Nom="ROURE" Prenom="Marie-Louise" CarteFidelite="false" />
+  <Client Id="64" Civilite="M" Nom="VILLE" Prenom="Jean-Paul" CarteFidelite="false" />
+  <Client Id="65" Civilite="M" Nom="NOCENTINI" Prenom="Alain" CarteFidelite="false" />
+  <Client Id="66" Civilite="M" Nom="LAYANI" Prenom="Lionel" CarteFidelite="true" Societe="Restaurant Les Près d'Amélie" />
+  <Client Id="67" Civilite="M" Nom="RECHUL" Prenom="Jacques" CarteFidelite="false" />
+  <Client Id="68" Civilite="Mme" Nom="DE CONINCK" Prenom="Patricia" CarteFidelite="false" />
+  <Client Id="69" Civilite="M" Nom="LEI" Prenom="Lin" CarteFidelite="false" />
+  <Client Id="70" Civilite="M" Nom="MICHEL" Prenom="Fernand" CarteFidelite="false" Societe="HOTEL DE LA POSTE" />
+  <Client Id="71" Civilite="M" Nom="BOURA" Prenom="André" CarteFidelite="false" Societe="CAFE DES SPORTS" />
+  <Client Id="72" Civilite="M" Nom="CARDONA" Prenom="Philippe" CarteFidelite="false" />
+  <Client Id="73" Civilite="M" Nom="THOMASSE" Prenom="Jean-Claude" CarteFidelite="true" />
+  <Client Id="74" Civilite="Mme" Nom="MOURIES" Prenom="Nathalie" CarteFidelite="false" />
+  <Client Id="75" Civilite="M" Nom="MARTIN" Prenom="Jean-Pierre" CarteFidelite="true" />
+  <Client Id="76" Civilite="M" Nom="BENZAQUI" Prenom="Joël" CarteFidelite="false" />
+  <Client Id="77" Civilite="M" Nom="ROUSSILLON" Prenom="Alain" CarteFidelite="false" />
+  <Client Id="78" Civilite="M" Nom="FARGETTON" Prenom="Denis" CarteFidelite="false" />
+  <Client Id="79" Civilite="M" Nom="LEPERCQ" Prenom="Jean-Claude" CarteFidelite="false" />
+  <Client Id="80" Civilite="M" Nom="OLIVIA" Prenom="Hubert" CarteFidelite="false" Societe="La Table de Méditérranée (restaurant)" />
+  <Client Id="81" Civilite="M" Nom="CASTAREDE" Prenom="Yves" CarteFidelite="false" />
+  <Client Id="82" Civilite="M" Nom="LEOTARD" Prenom="Jean-Paul" CarteFidelite="false" />
+  <Client Id="83" Civilite="Mme" Nom="LALANDE" Prenom="Colette" CarteFidelite="false" />
+  <Client Id="84" Civilite="M" Nom="BAVEREL" Prenom="Frédéric" CarteFidelite="false" />
+  <Client Id="85" Civilite="M" Nom="NOEL" Prenom="Régis" CarteFidelite="false" />
+  <Client Id="86" Civilite="M" Nom="THIRIOT" Prenom="Jacky" CarteFidelite="false" />
+  <Client Id="87" Civilite="M" Nom="BERTRAND" Prenom="Christophe" CarteFidelite="false" />
+  <Client Id="88" Civilite="M" Nom="BACQUE" Prenom="Michel" CarteFidelite="false" Societe="GARAGE DU CENTRE" />
+  <Client Id="89" Civilite="M" Nom="COUASSE" Prenom="François" CarteFidelite="true" Societe="SA IMPEX internatonal" />
+  <Client Id="90" Civilite="M" Nom="JOLY" Prenom="Christophe" CarteFidelite="false" />
+  <Client Id="91" Civilite="M" Nom="BENATTAR" Prenom="Pierre" CarteFidelite="false" />
+  <Client Id="92" Civilite="Mme" Nom="PARIS" Prenom="Michèle" CarteFidelite="false" />
+  <Client Id="93" Civilite="Mme" Nom="LEAL" Prenom="Jany" CarteFidelite="false" />
+  <Client Id="94" Civilite="M" Nom="BENATTAR" Prenom="Bernard" CarteFidelite="false" />
+  <Client Id="95" Civilite="M" Nom="AIACH" Prenom="Alexandre" CarteFidelite="false" />
+  <Client Id="96" Civilite="M" Nom="GAL" Prenom="Fabrice" CarteFidelite="true" />
+  <Client Id="97" Civilite="Mme" Nom="CHAMBON" Prenom="Edith" CarteFidelite="false" />
+  <Client Id="98" Civilite="M" Nom="DUQUESNAY" Prenom="Jacques" CarteFidelite="true" />
+  <Client Id="99" Civilite="M" Nom="CHANTEPIE" Prenom="Yanis" CarteFidelite="false" />
+  <Client Id="100" Civilite="M" Nom="DELPIERRE" Prenom="Henri" CarteFidelite="false" Societe="Ambulances Tour Eiffel" />
+  <Client Id="1101" Civilite="M" Nom="ER" Prenom="ER" CarteFidelite="false" Societe="" />
+  <Client Id="1102" Civilite="M" Nom="FQDF" Prenom="FQDSF" CarteFidelite="false" Societe="" />
+  <Client Id="1103" Civilite="M" Nom="test" Prenom="test" CarteFidelite="false" Societe="test" />
+  <Client Id="2101" Civilite="M" Nom="test" Prenom="test" CarteFidelite="false" Societe="" />
+</Clients>

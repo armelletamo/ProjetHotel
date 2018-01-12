@@ -52,6 +52,7 @@
     <Compile Include="AppGrandHotel.cs" />
     <Compile Include="ContexteGrandHotel.cs" />
     <Compile Include="Entite.cs" />
+    <Compile Include="Pages\PageFactures.cs" />
     <Compile Include="Pages\PageAccueil.cs" />
     <Compile Include="Pages\PageClient.cs" />
     <Compile Include="Program.cs" />

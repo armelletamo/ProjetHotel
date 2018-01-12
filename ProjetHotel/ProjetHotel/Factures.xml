@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Factures>
+	<Facture Id="1" IdClient="1" DateFacture="31/01/2016 00:00:00" DatePaiement="14/02/2016 00:00:00" CodeModePaiement="CB" Montant="77,44" />
+	<Facture Id="2" IdClient="1" DateFacture="31/01/2017 00:00:00" DatePaiement="15/02/2017 00:00:00" CodeModePaiement="CB" Montant="241,03" />
+	<Facture Id="3" IdClient="1" DateFacture="28/02/2016 00:00:00" DatePaiement="12/03/2016 00:00:00" CodeModePaiement="CHQ" Montant="204,60" />
+	<Facture Id="4" IdClient="1" DateFacture="28/02/2017 00:00:00" DatePaiement="14/03/2017 00:00:00" CodeModePaiement="CHQ" Montant="186,56" />
+	<Facture Id="5" IdClient="1" DateFacture="31/03/2016 00:00:00" DatePaiement="23/04/2016 00:00:00" CodeModePaiement="CB" Montant="136,40" />
+	<Facture Id="6" IdClient="1" DateFacture="31/03/2017 00:00:00" DatePaiement="27/04/2017 00:00:00" CodeModePaiement="CB" Montant="463,32" />
+	<Facture Id="7" IdClient="1" DateFacture="30/04/2016 00:00:00" DatePaiement="14/05/2016 00:00:00" CodeModePaiement="CHQ" Montant="457,60" />
+	<Facture Id="8" IdClient="1" DateFacture="30/04/2017 00:00:00" DatePaiement="14/05/2017 00:00:00" CodeModePaiement="CHQ" Montant="321,64" />
+	<Facture Id="9" IdClient="1" DateFacture="31/05/2016 00:00:00" DatePaiement="14/06/2016 00:00:00" CodeModePaiement="CHQ" Montant="400,40" />
+	<Facture Id="10" IdClient="1" DateFacture="31/05/2017 00:00:00" DatePaiement="11/06/2017 00:00:00" CodeModePaiement="ESP" Montant="184,36" />
+	<Facture Id="11" IdClient="1" DateFacture="30/06/2016 00:00:00" DatePaiement="14/07/2016 00:00:00" CodeModePaiement="CB" Montant="77,00" />
+	<Facture Id="12" IdClient="1" DateFacture="30/06/2017 00:00:00" DatePaiement="15/07/2017 00:00:00" CodeModePaiement="CHQ" Montant="343,20" />
+	<Facture Id="13" IdClient="1" DateFacture="31/07/2016 00:00:00" DatePaiement="12/08/2016 00:00:00" CodeModePaiement="CHQ" Montant="231,00" />
+	<Facture Id="14" IdClient="1" DateFacture="31/07/2017 00:00:00" DatePaiement="14/08/2017 00:00:00" CodeModePaiement="CHQ" Montant="154,44" />
+	<Facture Id="15" IdClient="1" DateFacture="31/08/2016 00:00:00" DatePaiement="23/09/2016 00:00:00" CodeModePaiement="CB" Montant="290,40" />
+	<Facture Id="16" IdClient="1" DateFacture="31/08/2017 00:00:00" DatePaiement="27/09/2017 00:00:00" CodeModePaiement="CB" Montant="181,28" />
+	<Facture Id="17" IdClient="1" DateFacture="30/09/2016 00:00:00" DatePaiement="18/10/2016 00:00:00" CodeModePaiement="CHQ" Montant="167,86" />
+	<Facture Id="18" IdClient="1" DateFacture="30/09/2017 00:00:00" DatePaiement="21/10/2017 00:00:00" CodeModePaiement="CHQ" Montant="169,40" />
+	<Facture Id="19" IdClient="1" DateFacture="31/10/2016 00:00:00" DatePaiement="30/11/2016 00:00:00" CodeModePaiement="CHQ" Montant="537,90" />
+	<Facture Id="20" IdClient="1" DateFacture="31/10/2017 00:00:00" DatePaiement="11/11/2017 00:00:00" CodeModePaiement="ESP" Montant="485,10" />
+	<Facture Id="21" IdClient="1" DateFacture="30/11/2016 00:00:00" DatePaiement="14/12/2016 00:00:00" CodeModePaiement="CB" Montant="406,12" />
+	<Facture Id="22" IdClient="1" DateFacture="30/11/2017 00:00:00" DatePaiement="15/12/2017 00:00:00" CodeModePaiement="CB" Montant="201,30" />
+	<Facture Id="23" IdClient="1" DateFacture="31/12/2016 00:00:00" DatePaiement="12/01/2017 00:00:00" CodeModePaiement="CHQ" Montant="489,28" />
+	<Facture Id="24" IdClient="1" DateFacture="31/12/2017 00:00:00" DatePaiement="10/01/2018 00:00:00" CodeModePaiement="CHQ" Montant="282,70" />
+	<Facture Id="2375" IdClient="1" DateFacture="01/01/2018 00:00:00" DatePaiement="01/01/2018 00:00:00" CodeModePaiement="CB" Montant="-492494079,00" />
+	<Facture Id="2376" IdClient="1" DateFacture="01/01/2017 00:00:00" DatePaiement="01/01/0001 00:00:00" CodeModePaiement="CB" Montant="0" />
+</Factures>

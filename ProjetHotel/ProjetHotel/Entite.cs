@@ -10,7 +10,6 @@ using System.Xml.Serialization;
 namespace ProjetHotel
 {
 
-
     public class Client
     {
         [Key]
@@ -29,37 +28,46 @@ namespace ProjetHotel
         public string Societe { get; set; }
         //Propriété de navigation
         [Display(ShortName = "None")]
+        [XmlIgnore]
         public virtual Adresse Adresse { get; set; }
         [Display(ShortName = "None")]
+        [XmlIgnore]
         public virtual List<Telephone> Telephones { get; set; }
         [Display(ShortName = "None")]
+        [XmlIgnore]
         public virtual List<Email> Emails { get; set; }
         [Display(ShortName = "None")]
+        [XmlIgnore]
         public virtual List<Facture> Factures { get; set; }
     }
 
     public class Facture
     {
         [Key]
+        [Display(ShortName = "IdFacture")]
         public int Id { get; set; }
         [ForeignKey("Client")]
+        [Display(ShortName = "None")]
         public int IdClient { get; set; }
         public DateTime DateFacture { get; set; }
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime DatePaiement { get; set; }
         [MaxLength(3)]
         public string CodeModePaiement { get; set; }
         [Display(ShortName = "None")]
         public virtual List<LigneFacture> LigneFactures { get; set; }
         [XmlIgnore]
+        [Display(ShortName = "None")]
         public virtual Client Client { get; set; }
-
+       
     }
 
     public class LigneFacture
     {
-       [Key]
-       [Column(Order =0)]
+        [Key]
+        [Column(Order = 0)]
         [ForeignKey("Facture")]
+        [Display(ShortName = "None")]
         public int IdFacture { get; set; }
         [Key]
         [Column(Order = 1)]
@@ -69,6 +77,7 @@ namespace ProjetHotel
         public decimal TauxTVA { get; set; }
         public decimal TauxReduction { get; set; }
         [XmlIgnore]
+        [Display(ShortName = "None")]
         public virtual Facture Facture { get; set; }
     }
 
@@ -138,8 +147,5 @@ namespace ProjetHotel
             return Adresse + "  " + Pro;
         }
     }
-
-
-
 
 }
